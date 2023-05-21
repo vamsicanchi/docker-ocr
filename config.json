@@ -1,0 +1,126 @@
+{
+    "project": {
+        "name": "piephi",
+        "client": "dev"
+    },
+    "paths":{
+        "root_dir"          : "../",
+        "working_dir"       : "./",
+        "log_dir": "../logs",
+        "searchable_pdf_temp": "../data/temp/pdf",
+        "text_file_temp": "../data/temp/text"
+        
+    },
+    "files":{
+        "image_extensions": [".png", ".jpg", ".jpeg", ".tiff"],
+        "excel_extensions": [],
+        "pdf_extensions":[],
+        "word_extensions": [],
+        "ppt_extensions": [],
+        "video_extensions": [],
+        "audio_extensions": [],
+        "other_extensions": [],
+        "allowed_extensions": [],
+        "not_allowed_extensions": []
+    },
+    "tesseract": {     
+        "config_string": {
+            "oem": "1",
+            "psm": "6",
+            "correct_osd": false,
+            "language": "eng",
+            "landetect": false,
+            "tessdata_dir": "../bin/configuration/tessdata",
+            "char_whitelist": "",
+            "char_blacklist": "",
+            "preserve_interword_spaces": true 
+        },
+        "config_data": {
+            "oem": "1",
+            "psm": "11",
+            "language": "eng"
+        },
+        "config_osd": {
+            "center": null,
+            "scale": 0.5
+        }
+    },
+    "opencv": {
+        "modules": {
+            "grayscale": true,
+            "scaling": true,
+            "thresholding": true,
+            "grayscale1": true,
+            "grayscale2": true,
+            "grayscale3": true,
+            "grayscale4": true,
+            "grayscale5": true,
+            "grayscale6": true,
+            "grayscale7": true,
+            "grayscale8": true,
+            "grayscale9": true,
+            "grayscale10": true
+        },
+        "grayscale": {
+
+        },
+        "scaling": {
+            "scale_percent": 150,
+            "inter_polation": 0
+        },
+        "thresholding": {}
+    },
+    "extraction": {
+        "camelot": {
+        },
+        "ocrmypdf": {
+            "language": null, 
+            "image_dpi": 300, 
+            "output_type": null, 
+            "sidecar": null, 
+            "jobs": null, 
+            "use_threads": null, 
+            "title": null, 
+            "author": null, 
+            "subject": null, 
+            "keywords": null, 
+            "rotate_pages": null, 
+            "remove_background": null, 
+            "deskew": true, 
+            "clean": null, 
+            "clean_final": null, 
+            "unpaper_args": null, 
+            "oversample": null, 
+            "remove_vectors": null, 
+            "threshold": null, 
+            "force_ocr": null, 
+            "skip_text": null, 
+            "redo_ocr": null, 
+            "skip_big": null, 
+            "optimize": null, 
+            "jpg_quality": null, 
+            "png_quality": null, 
+            "jbig2_lossy": null, 
+            "jbig2_page_group_size": null, 
+            "pages": null, 
+            "max_image_mpixels": null, 
+            "tesseract_config": null, 
+            "tesseract_pagesegmode": null, 
+            "tesseract_oem": null, 
+            "pdf_renderer": null, 
+            "tesseract_timeout": null, 
+            "rotate_pages_threshold": null, 
+            "pdfa_image_compression": null, 
+            "user_words": null, 
+            "user_patterns": null, 
+            "fast_web_view": null, 
+            "plugins": null, 
+            "plugin_manager": null, 
+            "keep_temporary_files": null, 
+            "progress_bar": null
+        }
+    },
+    "classification": {
+        
+    }
+}
