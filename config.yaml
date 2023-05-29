@@ -1,0 +1,9 @@
+name: "ATUS400"
+description: ATUS400
+monitoring:
+  projectid: "486"
+  workflowid: null
+publishSparkMetrics: false
+configureMonitorOptions:
+  mms: "{\"projectid\": \"486\", \"workflowid\": null,\"systemid\"\
+          :\"udp-batch\"}"
