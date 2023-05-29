@@ -7,8 +7,8 @@ import glob
 import time
 import math
 import timeit
-import tempfile
 import pathlib
+import tempfile
 import datetime
 import dateutil
 from sys import exc_info
@@ -21,6 +21,7 @@ import tabula
 import camelot
 import pdfminer
 import ocrmypdf
+import paddleocr
 import pdf2image
 import cv2 as cv
 import pdfplumber
@@ -33,7 +34,7 @@ def print_exception():
     info, error = format_exception(etype, value, tb)[-2:]
     print(f'Exception in:\n{info}\n{error}')
 
-class Tesseract:
+class TesseractOCR:
 
     """
     tesseract-ocr class for extracting text from images along with confidence, coordinates of each word in python
@@ -256,7 +257,7 @@ class Tesseract:
 class PaddleOCR:
     pass
 
-class Easyocr:
+class EasyOCR:
     pass
 
 class Extract:
