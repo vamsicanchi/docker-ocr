@@ -45,6 +45,10 @@
             "scale": 0.5
         }
     },
+    "paddle": { 
+    },
+    "easyocr": {
+    },
     "opencv": {
         "modules": {
             "grayscale": true,
